@@ -18,8 +18,7 @@ public class Complex {
     }
 
     public boolean equals(Complex other) {
-        return Math.abs(this.real - other.real) < 1e-6 &&
-                Math.abs(this.imag - other.imag) < 1e-6;
+        return this.real==other.real&&this.imag==other.imag;
     }
 
     public String toString() {
