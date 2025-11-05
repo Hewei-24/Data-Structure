@@ -1,0 +1,7 @@
+public class kmp{
+    //模式匹配的kmp算法
+    public int indexKMP(SeqString s,SeqString t,int begin){
+    int[] next = hetNext(t);    //计算模式串的next[]函数值
+    int i = begin;              //主串指针
+    int j = 0;                  //模式串指针
+    whileZ(i<s.length() && j < t.length()) {
