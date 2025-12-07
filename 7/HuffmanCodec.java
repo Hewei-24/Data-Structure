@@ -2,7 +2,7 @@ import java.util.Map;
 
 // 哈夫曼编码译码系统
 class HuffmanCodec {
-    private HuffmanTree huffmanTree;
+    private static  HuffmanTree huffmanTree;
     private Map<Character, String> encodeMap;
     private Map<String, Character> decodeMap;
 
@@ -43,7 +43,7 @@ class HuffmanCodec {
 
         HuffmanCodec codec = new HuffmanCodec(weights, charset);
         System.out.println("哈夫曼树与编码");
-        System.out.println(codec.huffmanTree.toString());
+        System.out.println(huffmanTree.toString());
 
         // 实验7.2 文本压缩解压测试
         System.out.println("\n文本压缩解压测试");
